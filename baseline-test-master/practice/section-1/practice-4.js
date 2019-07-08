@@ -2,8 +2,8 @@
 
 function collectSameElements(collectionA, objectB) {
   let collectionB = objectB.value;
-  var result = []
-  for(let i = 0 ;i <= collectionA.length; i++){
+  let result = []
+  for(let i = 0 ;i < collectionA.length; i++){
     for(let j = 0 ;j< collectionB.length; j++){
       if((collectionA[i].key == collectionB[j])){
         result.push(collectionB[j]);
@@ -11,6 +11,4 @@ function collectSameElements(collectionA, objectB) {
     }
   }
   return result;
-
- 
 }
